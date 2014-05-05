@@ -1,0 +1,68 @@
+<% html_title "Statistics" %>
+
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag 'style', :plugin => 'polls' %>
+<% end %>
+<div id="time">
+<h2><%= @project %> Statistics</h2>
+<h3>Issue amounts over time</h3>
+<table border="1">
+<tr>
+<th>Time Period</th>
+<th>Issue Amount</th>
+</tr>
+
+<tr>
+<td>1 day</td>
+<td><%= @one_day_count.count %></td>
+</tr>
+
+<tr>
+<td>7 days</td>
+<td><%= @seven_day_count.count %></td>
+</tr>
+
+<tr>
+<td>14 days</td>
+<td><%= @fourteen_day_count.count %></td>
+</tr>
+
+<tr>
+<td>30 days</td>
+<td><%= @thirty_day_count.count %></td>
+</tr>
+
+<tr>
+<td><b>Total Issues</b></td>
+<td><b><%= @total_count.count %></b></td>
+</tr>
+
+</table>
+</div>
+
+<div id="percent">
+<h3>Percentages</h3>
+<table border="1">
+
+
+<tr>
+<td>Total resolved issues</td>
+<td><%= @resolved_count.count %></td>
+</tr>
+
+<td>Percentage of resolved issues</td>
+<td><%= @resolved_count.count.to_f / @total_count.count*100.00 %> %</td>
+</tr>
+
+<tr>
+<td>Total closed issues</td>
+<td><%= @closed_count.count %></td>
+</tr>
+
+<td>Percentage of closed issues</td>
+<td><%= @closed_count.count.to_f / @total_count.count*100.00 %> %</td>
+</tr>
+
+
+</table>
+</div>
