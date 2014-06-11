@@ -1,8 +1,8 @@
 Redmine::Plugin.register :redmine_statistics do
-  name 'Statistics for FORGE Support project'
+  name 'Redmine Issue Statistics'
   author 'Ilkka Koutonen'
-  description 'This plugin shows issue statistics from FORGE Support project'
-  version '0.0.3'
+  description 'This plugin shows issue statistics from Redmine projects'
+  version '0.0.5'
 
 menu :project_menu, :stats, { :controller => 'stats', :action => 'index' }, :caption => 'Statistics', :after => :activity, :param => :project_id
 

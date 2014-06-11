@@ -66,3 +66,18 @@
 
 </table>
 </div>
+
+
+<div id="frame">
+<h3>Time related things</h3>
+
+<% url = URI.parse( request.url ) %>
+<% query = CGI.parse( url.query ) %>
+<% project = query['project_id'].first %>
+
+<iframe frameBorder="0" width='400px' height='400px' src="URL/erittainsalainenredminetiedosto7453295.php?project_id=<%= project %>">
+
+    <p>Iframe not working, please check the settings!</p>
+</iframe>
+</div>
+
