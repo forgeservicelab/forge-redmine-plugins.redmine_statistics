@@ -1,15 +1,3 @@
-#percent {
+.tablediv{
 float:left;
-padding-top:39px;
-padding-left:20px;
-}
-
-#time{
-float:left;
-}
-
-#frame{
-float:left;
-padding-top:39px;
-padding-left:20px;
 }

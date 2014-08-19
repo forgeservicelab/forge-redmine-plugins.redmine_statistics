@@ -3,8 +3,9 @@
 <% content_for :header_tags do %>
     <%= stylesheet_link_tag 'style', :plugin => 'polls' %>
 <% end %>
-<div id="time">
 <h2><%= @project %> Statistics</h2>
+
+<div class="tablediv">
 <h3>Issue amounts over time</h3>
 <table border="1">
 <tr>
@@ -40,7 +41,7 @@
 </table>
 </div>
 
-<div id="percent">
+<div class="tablediv">
 <h3>Percentages</h3>
 <table border="1">
 
@@ -67,7 +68,7 @@
 </table>
 </div>
 
-<div id="speed">
+<div class="tablediv">
 <h3>Issue closing times</h3>
 <table border="1">
 
