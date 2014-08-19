@@ -27,9 +27,6 @@ count_thirty = (Time.now - 30.day)..Time.now
 
 @aika = Issue.joins(:project).where(projects: {identifier: params[:project_id]}).to_a
 
-
-@keskiarvo = Issue.average('created_on')
-
   end
 
 private
