@@ -1,5 +1,2 @@
 Plugin needs to be activated as a module per project. Once activated, it adds Statistics tab in the project view. 
 This new page will show you how many issues have been created in specific amount of time, how many are closed and resolved and percentages for them.
-
-Copy 'erittainsalainenredminetiedosto7453295.php' to a place that is accessible from the internet and edit file to include MySQL credentials.
-Edit app/views/stats/index.html.erb to point to the correct address.
